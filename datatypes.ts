@@ -13,6 +13,16 @@ let words: string = `this year is  ${ name } published ${ years + 1} anniversary
 //boolean
 let flag: boolean = true;
 
+//any
+var anyType;
+
+// The parameter's type annotation is an object type
+function printCoord(pt: { x: number; y: number }) {
+    console.log("The coordinate's x value is " + pt.x);
+    console.log("The coordinate's y value is " + pt.y);
+  }
+  printCoord({ x: 3, y: 7 });
+
 // Array
 let arr1: number[] = [1, 2];
 
@@ -28,16 +38,6 @@ console.log(x[0]);    // out put
 function hello(): void {
     alert("Hello Runoob");
 }
-
-//any
-var anyType;
-
-// The parameter's type annotation is an object type
-function printCoord(pt: { x: number; y: number }) {
-    console.log("The coordinate's x value is " + pt.x);
-    console.log("The coordinate's y value is " + pt.y);
-  }
-  printCoord({ x: 3, y: 7 });
 
 //Union type
 function printId(id: number | string) {
