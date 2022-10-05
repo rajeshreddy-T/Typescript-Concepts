@@ -8,7 +8,6 @@ let hexLiteral: number = 0xf00d;
 //string
 let name0: string = "Runoob";
 let years: number = 5;
-let words: string = `this year is  ${ name } published ${ years + 1} anniversary`;
 
 //boolean
 let flag: boolean = true;
